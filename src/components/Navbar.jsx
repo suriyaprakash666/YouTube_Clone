@@ -1,4 +1,4 @@
-import { Stack } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import { logo } from "../utils/constants";
@@ -18,7 +18,16 @@ const Navbar = () => (
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
+      <Typography
+        marginLeft="5px"
+        color="#fff"
+        justifyContent="left"
+        fontWeight="bold"
+      >
+        YouTube
+      </Typography>
     </Link>
+
     <SearchBar />
   </Stack>
 );

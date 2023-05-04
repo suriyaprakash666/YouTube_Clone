@@ -3,7 +3,6 @@ import { Typography, Card, CardContent, CardMedia } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
 
 import {
-  demoThumbnailUrl,
   demoVideoUrl,
   demoVideoTitle,
   demoChannelUrl,
@@ -44,7 +43,7 @@ const VideoCard = ({
               : demoChannelUrl
           }
         >
-          <Typography variant="subtitle2" fontWeight="bold" color="#FFF">
+          <Typography variant="subtitle2" fontWeight="bold" color="gray">
             {snippet?.channelTitle || demoChannelTitle}
             <CheckCircle sx={{ fontSize: 12, color: "gray", ml: "5px" }} />
           </Typography>
